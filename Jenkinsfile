@@ -13,7 +13,7 @@ pipeline {
 
             emailext (
                 to: 'avi.kapase@gmail.com',
-                subject: "Build #${BUILD_NUMBER} - ${BUILD_STATUS}",
+                subject: "Build Execution",
                 body: "Build completed successfully. See attached report.",
                 attachmentsPattern: 'target/surefire-reports/index.html',
                 mimeType: 'text/html'
