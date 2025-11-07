@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.sql.Driver;
@@ -23,5 +24,6 @@ public class LaunchBrowser {
         driver.findElement(By.xpath("//div[@aria-label='palak rai']")).click();
 
         driver.quit();
+        Assert.assertTrue(false);
     }
 }
